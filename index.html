@@ -1,124 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Microverse Project</title>
 </head>
+
 <body>
-   <div class="container">
-      <header class="text-center">
-        <h1 id="title">MicroVerse HTML CSS Project</h1>
-        <p id="description" class="description">
-          <em>Thank you for taking the time to help us improve the platform</em>
-        </p>
-      </header>
-      <form action="#" id="survey-form" class="form-label">
-        <div class="form-group">
-          <label for="name" id="name-label">Name</label>
-          <input
-            type="text"
-            id="name"
-            class="form-control"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
+    <div class="container">
+        <header class="text-center">
+            <h1 id="title">MicroVerse HTML CSS Project</h1>
+            <p id="description" class="description">
+                <em>Afzel And Sumuhk are working on this project</em>
+            </p>
+        </header>
+        <form action="#" id="survey-form" class="form-label">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
 
-        <div class="form-group">
-          <label for="email" id="email-label">Email</label>
-          <input
-            type="email"
-            id="email"
-            class="form-control"
-            placeholder="Enter your Email"
-            required
-          />
-        </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your Email" required />
+            </div>
 
-        <div class="form-group">
-          <label for="number" id="number-label">Age (optional)</label>
-          <input
-            type="number"
-            min="10"
-            max="99"
-            name="age"
-            id="number"
-            placeholder="Age"
-            class="form-control"
-            required
-          />
-        </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" min="10" max="99" name="age" id="number" placeholder="Age" class="form-control"
+                    required />
+            </div>
 
-        <div class="form-group">
-          <label for="dropdown"
-            >Which option best describes your current role?</label
-          >
-          <select name="dropdown" id="dropdown" class="form-control" required>
-            <option disabled>Select current role</option>
-            <option value="Student">Student</option>
-            <option value="Full Time Job">Full Time Job</option>
-            <option value="Full Time Learner">Full Time Learner</option>
-            <option value="Prefer not to say">Prefer not to say</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-        <div id="dropdown-div"><br>
-            <label id="dropdown-label"><strong>Programming language you are expert at: </strong></label><br>
-            <select id="dropdown" name="code-lang" class="form">
-                <option value="C">C (Programming Language)</option>
-                <option value="Python">Python</option>
-                <option value="C#">C#</option>
-                <option value="php">PHP</option>
-                <option value="Js">Java Script</option>
-                <option value="Go">Go (Programming Language)</option>
-                <option value="ruby">Ruby on rails</option>
-                <option value="C++">C++</option>
-                <option value="Java">Java</option>
-            </select>
-         </div>
-         <div id="button-area"><br>
-          <label id="os-label"><b>Operating system experience: </b></label><br>
-          <input type="checkbox" name="os1" value="windows" checked> I am experienced with Windows-OS<br>
-          <input type="checkbox" name="os2" value="linux"> I am experienced with Linux-OS<br>
-          <input type="checkbox" name="0s3" value="mac"> I am experienced with Mac-OS<br>
-        </div>
+            <div class="form-group">
+                <label for="dropdown">Which option best describes your current role?</label>
+                <select name="dropdown" id="dropdown" class="form-control" required>
+                    <option disabled>Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                    <option value="Full Time Learner">Full Time Learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div id="dropdown-div"><br>
+                <label id="dropdown-label"><strong>Programming language you are expert at: </strong></label><br>
+                <select id="dropdown" name="code-lang" class="form">
+                    <option value="C">C (Programming Language)</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                    <option value="php">PHP</option>
+                    <option value="Js">Java Script</option>
+                    <option value="Go">Go (Programming Language)</option>
+                    <option value="ruby">Ruby on rails</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                </select>
+            </div>
+            <div id="button-area"><br>
+                <label id="os-label"><b>Operating system experience: </b></label><br>
+                <input type="checkbox" name="os1" value="windows" checked> I am experienced with Windows-OS<br>
+                <input type="checkbox" name="os2" value="linux"> I am experienced with Linux-OS<br>
+                <input type="checkbox" name="0s3" value="mac"> I am experienced with Mac-OS<br>
+            </div>
 
-        <div id="dropdown"><br><br>
-          <label id="dropdown-label"><strong>Programming language you wanna be expert: </strong></label><br>
-          <select id="dropdown" name="code-lang" class="form"><br><br>
-              <option value="C">C (Programming Language)</option>
-              <option value="Python">Python</option>
-              <option value="C#">C#</option>
-              <option value="php">PHP</option>
-              <option value="Js">Java Script</option>
-              <option value="Go">Go (Programming Language)</option>
-              <option value="ruby">Ruby on rails</option>
-              <option value="C++">C++</option>
-              <option value="Java">Java</option>
-          </select>
-       </div>
-        <div id="button-area"><br><br>
-          <label id="os-label"><b>Latest technology experience:</b></label><br>
-          <input type="checkbox" name="tech1" value="flutter"> Flutter UI<br>
-          <input type="checkbox" name="tech2" value="nodejs"> Node.js<br>
-          <input type="checkbox" name="tech3" value="tnflow"> Tensorflow<br>
-          <input type="checkbox" name="tech3" value="git"> Github<br>
-          <input type="checkbox" name="tech3" value="devops"> Dev-Ops<br>
-        </div>
+            <div id="dropdown"><br><br>
+                <label id="dropdown-label"><strong>Programming language you wanna be expert: </strong></label><br>
+                <select id="dropdown" name="code-lang" class="form"><br><br>
+                    <option value="C">C (Programming Language)</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                    <option value="php">PHP</option>
+                    <option value="Js">Java Script</option>
+                    <option value="Go">Go (Programming Language)</option>
+                    <option value="ruby">Ruby on rails</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                </select>
+            </div>
+            <div id="button-area"><br><br>
+                <label id="os-label"><b>Latest technology experience:</b></label><br>
+                <input type="checkbox" name="tech1" value="flutter"> Flutter UI<br>
+                <input type="checkbox" name="tech2" value="nodejs"> Node.js<br>
+                <input type="checkbox" name="tech3" value="tnflow"> Tensorflow<br>
+                <input type="checkbox" name="tech3" value="git"> Github<br>
+                <input type="checkbox" name="tech3" value="devops"> Dev-Ops<br>
+            </div>
 
 
-        <div id="ending"><br><br>
-          <label id="comments-label">Do you have any suggestion about this survey?</label><br>
-          <textarea style= height:120px;" class="form" placeholder="Please feel free to write a review..."></textarea><br><br>
-          <input id="submit" type="submit"  class="form">
-        </div>
-      </form>
-  </div>
-
-     
-      </form>
+            <div id="ending"><br><br>
+                <label id="comments-label">Do you have any suggestion about this survey?</label><br>
+                <textarea style=height:120px;" class="form"
+                    placeholder="Please feel free to write a review..."></textarea><br><br>
+                <input id="submit" type="submit" class="form">
+            </div>
+        </form>
+    </div>
+    </form>
     </div>
 </body>
+
 </html>
